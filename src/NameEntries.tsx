@@ -1,5 +1,8 @@
 import { useRef, useState, type CSSProperties } from "react";
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box, Button, DialogBackdrop, DialogBody, DialogCloseTrigger, DialogContent,
+  DialogFooter, DialogHeader, DialogPositioner, DialogRoot, DialogTitle, Flex, Heading, Text,
+} from "@chakra-ui/react";
 import { Copy, Download, FileUp, Plus, RotateCcw, Save, Trash } from "lucide-react";
 import { downloadCsv, wheelsToCsv } from "./csv";
 import { customContent } from "./storage";
@@ -58,6 +61,7 @@ export const NameEntries = ({
   const [csvText, setCsvText] = useState("");
   const [message, setMessage] = useState("");
   const [copiedPrompt, setCopiedPrompt] = useState(false);
+  const [previewGame, setPreviewGame] = useState<Game | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const promptInput = useRef<HTMLTextAreaElement>(null);
   const customWheels = customContent(state);
@@ -108,6 +112,7 @@ export const NameEntries = ({
   };
 
   return (
+    <>
     <Box width="full" borderRadius="xl" boxShadow="xl" bg="white" borderWidth="1px" borderColor="gray.200" p={{ base: 4, md: 6 }}>
       <Heading size="md" mb={3}>Choose a wheel</Heading>
       <Flex gap={2} mb={4} wrap="wrap">
@@ -161,6 +166,7 @@ export const NameEntries = ({
               </Text>
             </Box>
             <Flex gap={1} wrap="wrap" justify="flex-end">
+              <Button size="xs" {...controlStyle} onClick={() => setPreviewGame(game)}>Read instructions</Button>
               {game.custom && (
                 <Button size="xs" {...controlStyle} onClick={() => startEdit(game)}>Edit</Button>
               )}
@@ -258,5 +264,23 @@ export const NameEntries = ({
         </Box>
       </Box>
     </Box>
+
+    <DialogRoot open={Boolean(previewGame)} onOpenChange={(details: { open: boolean }) => { if (!details.open) setPreviewGame(null); }}>
+      <DialogBackdrop />
+      <DialogPositioner>
+        <DialogContent>
+          <DialogCloseTrigger />
+          <DialogHeader><DialogTitle>{previewGame?.title || "Instructions"}</DialogTitle></DialogHeader>
+          <DialogBody whiteSpace="pre-wrap" lineHeight="1.7">
+            {previewGame?.instructions?.trim()
+              || "No instructions yet. Add some with the form below, then download a CSV backup so you can restore them later."}
+          </DialogBody>
+          <DialogFooter>
+            <Button onClick={() => setPreviewGame(null)}>Close</Button>
+          </DialogFooter>
+        </DialogContent>
+      </DialogPositioner>
+    </DialogRoot>
+    </>
   );
 };
