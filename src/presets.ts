@@ -126,7 +126,7 @@ export const PRESET_WHEELS: Wheel[] = [
       game("preset-geo-where-in-the-world", "Where in the World?", "Give clues about a country, city, landscape or landmark. Keep adding clues until the place is guessed."),
       game("preset-geo-nsew-race", "North South East West Race", "Put direction signs around the room. Follow a called route using north, south, east and west."),
       game("preset-geo-map-symbol-hunt", "Map Symbol Hunt", "Look at a real map, then hunt for symbols such as roads, water, parks and buildings. Create a personal map key."),
-      game("preset-geo-home-to-marae-map", "Home-to-Marae Map", "Draw the important stages of a real or imagined journey from home to the marae, adding landmarks along the way."),
+      game("preset-geo-journey-map", "Journey Map", "Draw the important stages of a real or imagined journey from home to a familiar place, such as school, a park or a relative’s house, adding landmarks along the way."),
       game("preset-geo-world-animal-match", "World Animal Match", "Match animals to the continents or habitats where they naturally live, then move like each animal."),
       game("preset-geo-ocean-jump", "Ocean Jump", "Label floor areas with ocean names. Jump to the correct ocean when given a continent or location clue."),
       game("preset-geo-mountain-river-forest", "Mountain River or Forest", "Call a landscape type and move to its labelled area. Describe one feature of mountains, rivers or forests."),
@@ -197,28 +197,6 @@ export const PRESET_WHEELS: Wheel[] = [
       game("preset-logic-memory-tray", "Memory Tray", "Study a tray of objects for 30 seconds, cover it and recall or draw as many items as possible."),
       game("preset-logic-blindfold-directions", "Blindfold Directions", "Guide a blindfolded adult or a toy through a safe open route using precise verbal directions."),
       game("preset-logic-bridge-building", "Bridge-Building Challenge", "Use paper, blocks or recycled materials to build a bridge that spans a gap and holds a small toy. Test and improve it."),
-    ]
-  ),
-  wheel(
-    "preset-te-reo",
-    "Te reo Māori and waiata",
-    "Familiar kupu, waiata, movement and marae-connected experiences supported naturally by whānau.",
-    [
-      game("preset-tereo-kupu-hunt", "Kupu Hunt", "Choose a familiar kupu and hunt for the matching object or picture. Say the word together each time it is found."),
-      game("preset-tereo-tau-number-jump", "Tau Number Jump", "Place Māori number cards on the floor. Call a number in te reo Māori and jump to it, then count actions together."),
-      game("preset-tereo-tae-colour-corners", "Tae Colour Corners", "Put colour cards in different corners. Call a tae in te reo Māori and move to the matching colour."),
-      game("preset-tereo-tinana-body-part", "Tinana Body-Part Actions", "Sing or call familiar body-part words and touch or move the correct part, using phrases from an action waiata."),
-      game("preset-tereo-kararehe-charades", "Kararehe Animal Charades", "Choose an animal picture and act it out. Guess the kararehe and repeat its Māori name together."),
-      game("preset-tereo-whanau-picture-talk", "Whānau Picture Talk", "Use family photos or drawings to name whānau members and practise a few simple descriptive sentences."),
-      game("preset-tereo-waiata-action-song", "Waiata Action Song", "Choose a familiar waiata with actions. Sing it together, matching the meaning with clear movements."),
-      game("preset-tereo-rakau-rhythm", "Rākau Rhythm Game", "Tap or pass rākau in a simple repeated rhythm while chanting familiar kupu or counting in te reo Māori."),
-      game("preset-tereo-mihi-practice", "Mihi Practice", "Practise a short mihi in small sections, using names and whakapapa details that the whānau is comfortable sharing."),
-      game("preset-tereo-memory-match", "Te Reo Memory Match", "Make matching pairs of Māori word cards and pictures. Turn them face down and say each kupu when a card is revealed."),
-      game("preset-tereo-simon-says", "Simon Says in Te Reo", "Give familiar movement instructions in te reo Māori, such as stand, sit or jump. Move only after the agreed cue."),
-      game("preset-tereo-weather-words", "Weather Words in Te Reo", "Look outside and choose the matching Māori weather word or picture, then repeat it in a short phrase."),
-      game("preset-tereo-count-and-clap", "Count-and-Clap in Te Reo", "Count claps, jumps or steps together in te reo Māori, changing the speed or stopping at a called number."),
-      game("preset-tereo-purakau-story-acting", "Pūrākau Story Acting", "Listen to a whānau-approved pūrākau, then retell or act out its main events and talk about its message."),
-      game("preset-tereo-mara-kai-word-hunt", "Māra Kai Word Hunt", "Visit or work in the māra kai and find plants, tools or actions whose Māori words are being learned. Use the words during the task."),
     ]
   ),
 ];

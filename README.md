@@ -10,7 +10,7 @@ After GitHub Pages is enabled, the public site is:
 
 https://macbeamish.github.io/learning-games-wheel/
 
-Built-in subject wheels cover number and maths; letters, phonics and reading; talking, listening and storytelling; geography and world; science and nature; logic, memory and problem-solving; and te reo Māori and waiata. Anything you add is stored only in your browser, not on a server.
+Built-in subject wheels cover number and maths; letters, phonics and reading; talking, listening and storytelling; geography and world; science and nature; and logic, memory and problem-solving. Anything you add is stored only in your browser, not on a server.
 
 ## Add your own games
 
