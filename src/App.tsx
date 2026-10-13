@@ -210,9 +210,15 @@ function App() {
         <Text textAlign="center" color="gray.600" mt={2} maxW="720px" mx="auto">
           Spin a subject wheel to pick a home-learning game. Built-in games stay on the wheel. Anything you add is saved in this browser until you clear the site data.
         </Text>
-        <Text textAlign="center" fontWeight="semibold" color="#24463D" mt={4} mb={7}>
+        <Text textAlign="center" fontWeight="semibold" color="#24463D" mt={4}>
           {activeWheel?.name}
         </Text>
+        {activeWheel?.description && (
+          <Text textAlign="center" color="gray.600" mt={1} mb={7} maxW="720px" mx="auto">
+            {activeWheel.description}
+          </Text>
+        )}
+        {!activeWheel?.description && <Box mb={7} />}
         <Flex width="full" direction={{ base: "column", lg: "row" }} gap={6} align="start">
           <Box width={{ base: "100%", lg: "55%" }} position={{ lg: "sticky" }} top={4}>
             <Suspense fallback={<Text textAlign="center">Loading the wheel…</Text>}>

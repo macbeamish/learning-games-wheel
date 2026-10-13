@@ -1,31 +1,157 @@
 wheel,title,instructions
-Number games,Number-Line Jump,"Make a number line on the floor. Call a number or a simple sum. Jump to the answer."
-Number games,Beanbag Answers,"Ask a maths question. Throw a beanbag onto the matching number card."
-Number games,Maths Obstacle Course,"Set up simple obstacles. Solve a number challenge at each station before moving on."
-Number games,Addition Bowling,"Bowl over bottles. Count fallen and standing pins, then say the addition sentence."
-Number games,Skip-Count Steps,"Walk around the room counting in 2s, 5s or 10s."
-Letter games,Letter Hunt,"Hide letter cards. Find them, say the sound, and think of a matching word."
-Letter games,Phonics Hopscotch,"Hop on letter squares, say each sound, then blend them into a word."
-Letter games,Word Relay,"Run to collect letters and build a given word."
-Letter games,Robot Blending,"Stretch a word like a robot (c-a-t). Blend the sounds into the whole word."
-Letter games,Syllable Steps,"Take one step for each syllable in a word."
-Talking games,Act Out a Story,"Read a short story, then act out favourite scenes together."
-Talking games,Emotion Charades,"Act out a feeling with no words, then talk about a time you felt that way."
-Talking games,Story Stations,"Move between Beginning, Problem, Solution and Ending to tell a story."
-Talking games,Mystery Object,"Guess a hidden object by asking yes/no questions or feeling inside a bag."
-Talking games,Puppet Interview,"Interview a toy or puppet in character."
-Geography,Compass Directions,"Follow north, east, south and west instructions to find a treasure."
-Geography,Map Treasure Hunt,"Draw a simple map of the room or garden and follow it to an X."
-Geography,Continent Corners,"Run to the corner that matches an animal, food or landmark."
-Geography,Weather Reporter,"Look outside and give a weather report, including what to wear."
-Geography,Land or Water,"Jump to land or water when a place, animal or vehicle is called."
-Science,Sink or Float,"Predict then test which household objects sink or float."
-Science,Magnet Hunt,"Test objects with a magnet and sort magnetic from not magnetic."
-Science,Ramp Race,"Race toys down a ramp. Change the slope or surface and compare."
-Science,Shadow Chase,"Make shadows with a torch or sunshine and notice how they change."
-Science,Habitat Builder,"Build a mini home for an animal and explain why it fits."
-Logic and puzzles,Puzzle Relay,"Fetch jigsaw pieces one at a time and complete the picture."
-Logic and puzzles,Human Coding,"Give step-by-step robot instructions to reach a target. Debug mistakes."
-Logic and puzzles,What Changed?,"Look at a tray of objects, turn away, then spot what changed."
-Logic and puzzles,Build from Memory,"Look at a block model, hide it, then rebuild it from memory."
-Logic and puzzles,Pattern Moves,"Copy a movement pattern, then add the next moves."
+Number and maths,Number Hunt,"Hide number cards around the room. Find one, say the number, then collect that many small objects."
+Number and maths,Floor Is Lava Maths,Spread number-answer cards on the floor as safe islands. Call out a maths question and jump to the correct answer.
+Number and maths,Hopscotch Maths,Write numbers or sums in hopscotch squares. Solve each one while hopping through the course.
+Number and maths,Toy Shop,"Set up a pretend shop with household objects and price labels. Buy, sell, count coins and work out simple totals or change."
+Number and maths,Dice Race,"Roll a die, solve a matching counting or addition task, then move that many spaces toward a finish line."
+Number and maths,Double It!,"Choose a small number with cards or dice, build it with objects, then make twice as many."
+Number and maths,Feed the Monster,Make a box monster with a mouth. Solve a number challenge and feed it the correct number of counters.
+Number and maths,Hungry Crocodile,Use a crocodile mouth made from card or hands. Compare two groups and point the open mouth toward the larger amount.
+Number and maths,Sock Maths,"Mix clean socks, then race to match pairs. Count the pairs, individual socks, colours or patterns."
+Number and maths,Lego Towers,Roll a die or draw a number card and build a Lego tower with that many bricks. Compare tower heights.
+Number and maths,Make 10,Draw two number cards and use counters to find how many more are needed to make 10.
+Number and maths,Bowling Maths,"Set up bottles as pins. Roll a ball, count how many fall and subtract them from the starting total."
+Number and maths,Jump the Answer,Place answer cards around the room. Ask a sum and jump onto the matching answer.
+Number and maths,Pattern Master,"Start a colour, shape, sound or movement pattern. Copy it and add the next part."
+Number and maths,Estimate It,"Guess the number of objects in a jar or pile, then count them and compare the estimate with the result."
+Number and maths,Measure the House,"Choose household objects or rooms to measure using blocks, footsteps, a ruler or tape measure. Record the results."
+Number and maths,Tallest Tower,"Use blocks, cups or boxes to build the tallest freestanding tower possible, then measure and improve it."
+Number and maths,Maths Workout,"Link movements to numbers: five jumps, three squats and two spins. Add the movements or repeat a pattern."
+Number and maths,Human Number Line,Lay number cards in a line on the floor. Stand on a number and step forward or back to solve addition and subtraction.
+Number and maths,Number-Line Jump,Make a floor number line and call a starting number plus an instruction such as “jump forward three.” Say the landing number.
+Number and maths,Beanbag Answers,Place numbered targets on the floor. Ask a question and throw a beanbag onto the correct answer.
+Number and maths,Maths Obstacle Course,"Build a short obstacle course. At each station solve a counting, measuring, shape or number challenge before continuing."
+Number and maths,Skip-Count Steps,"Count aloud while stepping, clapping or jumping in twos, fives or tens. Stop and predict the next number."
+Number and maths,Shape Hunt,"Hide or point out shapes around the home. Name each shape and describe its sides, corners and position."
+"Letters, phonics and reading",Letter Hunt,"Choose a letter and hunt for objects, labels or book words beginning with it. Say each sound as it is found."
+"Letters, phonics and reading",Secret Message,"Write a short word or clue using pictures, initial letters or simple symbols. Swap messages and decode them."
+"Letters, phonics and reading",Write Me a Clue,Choose a hidden object and write or dictate one clue at a time until the other player guesses it.
+"Letters, phonics and reading",Beanbag Letters,Place letter cards as targets. Say a sound or word and throw a beanbag at the matching beginning or ending letter.
+"Letters, phonics and reading",Alphabet Rescue,"Hide alphabet cards around the room. Find them and place them in order, saying each letter and sound."
+"Letters, phonics and reading",Sound Detective,Say a sound and search for something that begins or ends with it. Take turns being the sound caller.
+"Letters, phonics and reading",Word Builder,Use magnetic or paper letters to build a spoken word. Change one letter to make a new word.
+"Letters, phonics and reading",Silly Sentence,Choose a few word or picture cards and arrange them into the funniest sentence that still makes sense.
+"Letters, phonics and reading",Story Dice,"Roll picture dice or choose random pictures, then tell or write a story that includes every image."
+"Letters, phonics and reading",Finish My Story,"Begin a story with one sentence. Take turns adding sentences, drawing key events or writing simple words."
+"Letters, phonics and reading",Draw My Instructions,"Give a short sequence of instructions for a picture. The listener draws exactly what they hear, then compares results."
+"Letters, phonics and reading",Teacher Swap,"The child becomes the teacher and explains a letter, sound or word game to an adult or toy pupil."
+"Letters, phonics and reading",Phonics Hopscotch,"Write letters or sounds in hopscotch squares. Hop to the sound called, or say a word using each sound landed on."
+"Letters, phonics and reading",Word Relay,"Put word or picture cards at one end of the room. Run to collect one, read it and sort or use it in a sentence."
+"Letters, phonics and reading",Robot Blending,"Say a simple word slowly like a robot, stretching each sound. Blend the sounds together and identify the word."
+"Letters, phonics and reading",Syllable Steps,"Say a word and step, clap or jump once for each syllable. Sort words by the number of syllables."
+"Letters, phonics and reading",Sound Corners,Place sound cards in different corners. Say a word and move to the corner showing its first or final sound.
+"Letters, phonics and reading",Letter Toss,"Toss letter cards or soft letter shapes into a basket. Name the letter, sound and a word beginning with it before each toss."
+"Letters, phonics and reading",Alphabet Obstacle Course,"Build a course with letter stations. Crawl, jump or balance to each one and complete its sound or word challenge."
+"Letters, phonics and reading",Rhyming Race,"Say a word, then race to find or call another word that rhymes. Use picture cards when a prompt is helpful."
+"Letters, phonics and reading",Word Scavenger Hunt,"Choose a letter, sound or word family and search books, labels and packages for matching examples."
+"Letters, phonics and reading",Sight Word Splat,"Spread familiar word cards on the floor. Call a word and tap it quickly with a fly swatter, hand or beanbag."
+"Letters, phonics and reading",Build-a-Word Relay,Carry one letter at a time through a relay course and arrange the collected letters to build a spoken word.
+"Letters, phonics and reading",Vowel Jump,Place vowel cards on the floor. Say a simple word and jump to the vowel sound heard in the middle.
+"Talking, listening and storytelling",Silly Sentence,"Pick random people, places and actions, then join them into a funny complete sentence."
+"Talking, listening and storytelling",Story Dice,Roll picture dice or choose images and tell a story linking every picture in order.
+"Talking, listening and storytelling",Finish My Story,One person begins a story and stops at an exciting point. The next person continues it.
+"Talking, listening and storytelling",Mystery Bag,Feel an unseen household object inside a bag and describe it without naming it. Others guess what it is.
+"Talking, listening and storytelling",20 Questions,"Choose a person, animal, place or object. The other player may ask up to 20 yes-or-no questions to identify it."
+"Talking, listening and storytelling",Weather Reporter,"Look outside or use a weather picture, then present a short forecast including temperature, clothing and activities."
+"Talking, listening and storytelling",Where Am I?,"Describe a familiar place without naming it. Give clues about what can be seen, heard and done there."
+"Talking, listening and storytelling",Teacher Swap,"The child teaches an adult or toy how to do something, then answers questions from the “class.”"
+"Talking, listening and storytelling",Invent a Game,"Make up a simple game, explain its goal and rules, test it together and change anything that is confusing."
+"Talking, listening and storytelling",Act Out a Story,"Choose a familiar story or invent one, then act out the characters and events using movement and dialogue."
+"Talking, listening and storytelling",Emotion Charades,"Act out an emotion using face, posture and movement without speaking. Guess it and discuss when someone might feel that way."
+"Talking, listening and storytelling",Story Stations,"Set up several story stops around the room. Add a character, problem or event at each stop."
+"Talking, listening and storytelling",Puppet Interview,"Use puppets or toys to interview a character. Ask about their feelings, choices and adventures."
+"Talking, listening and storytelling",Describe and Draw,One person describes a picture or simple arrangement without showing it. The other draws it from the spoken details.
+"Talking, listening and storytelling",Yes-or-No Detective,One player secretly chooses something. Ask only yes-or-no questions until it is identified.
+"Talking, listening and storytelling",Question Ball,Toss a soft ball back and forth. Whoever catches it answers a question or asks the next one.
+"Talking, listening and storytelling",Sound-Effects Story,Tell a short story while another person creates matching noises with their voice or household objects.
+"Talking, listening and storytelling",Picture Prompt,"Choose an interesting picture and explain what happened before it, what is happening now and what may happen next."
+"Talking, listening and storytelling",News Reporter,"Present two or three pieces of family or local news using a clear opening, details and closing."
+"Talking, listening and storytelling",Story Relay,"Move between marked stations, adding one sentence to the shared story at each station."
+"Talking, listening and storytelling",Telephone Game,"Whisper a sentence from person to person, then compare the final version with the original."
+"Talking, listening and storytelling",Silly Choices Debate,Choose a playful question such as “Would you rather fly or breathe underwater?” Give a choice and a reason.
+"Talking, listening and storytelling",Show and Tell,"Choose an object, creation or discovery to present. Explain what it is and answer a few questions."
+"Talking, listening and storytelling",Role-Play Shop,"Set up a pretend shop and take turns being customer and shopkeeper, asking questions and speaking politely."
+Geography and world,Compass Directions,"Mark north, south, east and west in the room. Call a direction and move, jump or turn toward it."
+Geography and world,Map Treasure Hunt,"Draw a simple map with a route and landmarks leading to hidden treasure. Follow it, then swap mapmaker roles."
+Geography and world,Continent Corners,"Label four areas with continent names. Call an animal, landmark or country and move to its continent."
+Geography and world,Weather Reporter,Observe the day’s weather and present a report. Mark it on a weekly chart and compare changes.
+Geography and world,Land or Water,Sort pictures or toy animals and vehicles according to whether they belong mainly on land or water.
+Geography and world,Globe Spin,"Spin a globe or point randomly at a map. Find the place, name its continent and discover one fact about it."
+Geography and world,Postcard Adventure,Choose a place and create a postcard drawing. Dictate or write a short message about what could be seen there.
+Geography and world,Build a Map,"Draw a map of a bedroom, home, garden or imagined island using a key and clear landmarks."
+Geography and world,Country Flag Match,"Match printed or hand-drawn flags to country names or map locations. Notice colours, shapes and symbols."
+Geography and world,Where in the World?,"Give clues about a country, city, landscape or landmark. Keep adding clues until the place is guessed."
+Geography and world,North South East West Race,"Put direction signs around the room. Follow a called route using north, south, east and west."
+Geography and world,Map Symbol Hunt,"Look at a real map, then hunt for symbols such as roads, water, parks and buildings. Create a personal map key."
+Geography and world,Home-to-Marae Map,"Draw the important stages of a real or imagined journey from home to the marae, adding landmarks along the way."
+Geography and world,World Animal Match,"Match animals to the continents or habitats where they naturally live, then move like each animal."
+Geography and world,Ocean Jump,Label floor areas with ocean names. Jump to the correct ocean when given a continent or location clue.
+Geography and world,Mountain River or Forest,"Call a landscape type and move to its labelled area. Describe one feature of mountains, rivers or forests."
+Geography and world,Capital City Match,"Match a small set of countries with their capital cities using cards, a map and repeated play."
+Geography and world,Pack for the Climate,"Choose a destination and climate, then select suitable clothing and items to pack. Explain each choice."
+Geography and world,Follow the Route,Follow a route on a floor map or drawn map using direction and distance instructions.
+Geography and world,Neighbourhood Walk Map,"Walk around the neighbourhood and notice landmarks, roads and turns. Afterwards draw the route from memory."
+Geography and world,Time-Zone Movement Game,"Assign different room areas to morning, daytime and night in other locations. Move between them as the world “turns.”"
+Geography and world,Build a Landmark,"Build a famous or imagined landmark from blocks, boxes or recycled materials, then locate its country or region."
+Geography and world,Country Clue Charades,"Act out a country clue through food, animals, weather, sport or landmarks while others guess."
+Geography and world,Human Compass,One person becomes a compass needle. Turn the “map” or call directions and keep pointing north.
+Science and nature,Sink or Float,"Predict whether household objects will sink or float, test them in water, then sort and discuss the results."
+Science and nature,Magnet Hunt,Use a magnet to test safe household objects. Sort them into magnetic and non-magnetic groups.
+Science and nature,Ramp Race,Roll toy cars or balls down ramps with different heights or surfaces. Predict and compare distance or speed.
+Science and nature,Shadow Chase,Find and trace shadows outside or near a lamp. Revisit later and compare how their position or size changes.
+Science and nature,Habitat Builder,"Choose an animal and build a habitat with blocks, natural materials or drawings, including food, water and shelter."
+Science and nature,Nature Scavenger Hunt,"Search outdoors for items matching prompts such as rough, green, tiny or fallen. Observe without damaging living things."
+Science and nature,Animal Movement Match,Choose an animal card and move like that animal. Guess it and discuss how its movement suits its body or habitat.
+Science and nature,Weather Station,"Record temperature, clouds, wind and precipitation at the same time each day using a simple chart."
+Science and nature,Mini-Beast Search,"Carefully search for insects and other tiny creatures. Observe where they live, then leave them undisturbed."
+Science and nature,Plant Parts Puzzle,"Use a real plant or picture to identify roots, stem, leaves, flowers and seeds, then assemble a labelled puzzle or drawing."
+Science and nature,States of Matter Actions,"Choose solid, liquid or gas signs. Act out how particles move in each state and move to the right sign for examples."
+Science and nature,Colour-Mixing Lab,Mix small amounts of coloured water or paint. Predict the new colour before combining them.
+Science and nature,Ice-Melt Race,Put equal ice cubes in different places or conditions. Predict which will melt first and compare the results.
+Science and nature,Sound Hunt,"Pause in different places and list or imitate the sounds heard. Sort them as natural, human-made, loud or quiet."
+Science and nature,Five Senses Trail,"Follow a trail of stations for sight, hearing, touch, smell and safe tasting. Describe observations with precise words."
+Science and nature,Day or Night Sort,"Sort animals, activities and sky pictures into day, night or both, explaining each decision."
+Science and nature,Living or Non-Living Relay,Carry picture cards through a short relay and sort them as living or non-living. Explain what living things need.
+Science and nature,Build a Nest,"Use grass, twigs, paper or craft materials to build a nest that can safely hold pretend eggs."
+Science and nature,Seed Scientist,"Plant quick-growing seeds, predict what will happen and record changes with drawings and measurements."
+Science and nature,Cloud Spotting,Observe clouds and match their shapes to simple cloud pictures. Describe cloud cover and expected weather.
+Science and nature,Food Chain Line-Up,Give each player or card a role in a simple food chain. Stand in order and show what changes if one part disappears.
+Science and nature,Push or Pull,Move household objects by pushing or pulling. Compare the force needed and the direction of movement.
+Science and nature,Fast or Slow Ramp Test,Change one ramp feature at a time and race identical objects. Record which setup makes them travel fastest or farthest.
+Science and nature,Make a Mini Volcano,"Combine baking soda and vinegar in a tray or model volcano. Predict, observe and describe the bubbling reaction."
+Science and nature,Backyard Field Journal,"Choose one outdoor area to revisit. Draw or write observations about plants, animals, weather and seasonal change."
+"Logic, memory and problem-solving",Puzzle Relay,Place simple puzzles at the far end of a movement course. Collect one piece per trip and complete the puzzle.
+"Logic, memory and problem-solving",Human Coding,"Give step-by-step commands such as forward, turn and pick up. One person acts as the robot while the other debugs the instructions."
+"Logic, memory and problem-solving",What Changed?,"Study a group of objects, close your eyes and let someone move, add or remove one. Identify the change."
+"Logic, memory and problem-solving",Build from Memory,"Look at a small block model for a short time, cover it, then rebuild it from memory and compare."
+"Logic, memory and problem-solving",Pattern Moves,"Copy a sequence of movements, then add one new movement each round without forgetting the earlier pattern."
+"Logic, memory and problem-solving",Obstacle Course Quiz,"Complete a movement course with a riddle, pattern or sorting task at each station."
+"Logic, memory and problem-solving",Run and Fetch,"Ask for an object matching several clues, such as “small, red and soft.” Run to find a suitable answer."
+"Logic, memory and problem-solving",Scavenger Hunt,Use a list of clues to find objects around the home. Tick them off and explain how each object matches.
+"Logic, memory and problem-solving",Draw It Huge,"Call a shape, letter, route or idea and draw it at large scale using chalk, paper or body movement."
+"Logic, memory and problem-solving",Race the Timer,"Set a short timer and complete an age-appropriate sorting, building or puzzle challenge before it ends."
+"Logic, memory and problem-solving",Simon Says Sequence,Perform a growing sequence of actions. Each player repeats the full sequence and adds one more action.
+"Logic, memory and problem-solving",Treasure Hunt Clues,Follow a chain of simple picture or written clues leading to a hidden object.
+"Logic, memory and problem-solving",Odd One Out,Show four objects or pictures where one does not belong. Choose the odd one and explain the rule.
+"Logic, memory and problem-solving",Copy My Block Build,"One player builds a block model behind a screen and describes it. The other follows the instructions, then compares."
+"Logic, memory and problem-solving",Which Comes Next?,"Show a number, colour, shape or action sequence with one part missing. Work out what should come next."
+"Logic, memory and problem-solving",Maze Maker,"Draw or build a simple maze, then guide a toy through it using clear directions. Swap roles."
+"Logic, memory and problem-solving",Sorting Challenge,"Sort mixed household objects in as many different ways as possible, such as size, colour, use or material."
+"Logic, memory and problem-solving",Memory Tray,"Study a tray of objects for 30 seconds, cover it and recall or draw as many items as possible."
+"Logic, memory and problem-solving",Blindfold Directions,Guide a blindfolded adult or a toy through a safe open route using precise verbal directions.
+"Logic, memory and problem-solving",Bridge-Building Challenge,"Use paper, blocks or recycled materials to build a bridge that spans a gap and holds a small toy. Test and improve it."
+Te reo Māori and waiata,Kupu Hunt,Choose a familiar kupu and hunt for the matching object or picture. Say the word together each time it is found.
+Te reo Māori and waiata,Tau Number Jump,"Place Māori number cards on the floor. Call a number in te reo Māori and jump to it, then count actions together."
+Te reo Māori and waiata,Tae Colour Corners,Put colour cards in different corners. Call a tae in te reo Māori and move to the matching colour.
+Te reo Māori and waiata,Tinana Body-Part Actions,"Sing or call familiar body-part words and touch or move the correct part, using phrases from an action waiata."
+Te reo Māori and waiata,Kararehe Animal Charades,Choose an animal picture and act it out. Guess the kararehe and repeat its Māori name together.
+Te reo Māori and waiata,Whānau Picture Talk,Use family photos or drawings to name whānau members and practise a few simple descriptive sentences.
+Te reo Māori and waiata,Waiata Action Song,"Choose a familiar waiata with actions. Sing it together, matching the meaning with clear movements."
+Te reo Māori and waiata,Rākau Rhythm Game,Tap or pass rākau in a simple repeated rhythm while chanting familiar kupu or counting in te reo Māori.
+Te reo Māori and waiata,Mihi Practice,"Practise a short mihi in small sections, using names and whakapapa details that the whānau is comfortable sharing."
+Te reo Māori and waiata,Te Reo Memory Match,Make matching pairs of Māori word cards and pictures. Turn them face down and say each kupu when a card is revealed.
+Te reo Māori and waiata,Simon Says in Te Reo,"Give familiar movement instructions in te reo Māori, such as stand, sit or jump. Move only after the agreed cue."
+Te reo Māori and waiata,Weather Words in Te Reo,"Look outside and choose the matching Māori weather word or picture, then repeat it in a short phrase."
+Te reo Māori and waiata,Count-and-Clap in Te Reo,"Count claps, jumps or steps together in te reo Māori, changing the speed or stopping at a called number."
+Te reo Māori and waiata,Pūrākau Story Acting,"Listen to a whānau-approved pūrākau, then retell or act out its main events and talk about its message."
+Te reo Māori and waiata,Māra Kai Word Hunt,"Visit or work in the māra kai and find plants, tools or actions whose Māori words are being learned. Use the words during the task."

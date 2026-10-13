@@ -48,6 +48,7 @@ function asWheel(value: unknown, customFallback: boolean): Wheel | null {
   return {
     id: typeof value.id === "string" && value.id ? value.id : makeId(),
     name,
+    description: typeof value.description === "string" ? value.description : undefined,
     games,
     custom: typeof value.custom === "boolean" ? value.custom : customFallback,
   };

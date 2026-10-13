@@ -8,6 +8,7 @@ export interface Game {
 export interface Wheel {
   id: string;
   name: string;
+  description?: string;
   games: Game[];
   custom: boolean;
 }

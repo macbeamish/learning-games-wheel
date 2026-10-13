@@ -1,6 +1,6 @@
 import { useRef, useState, type CSSProperties } from "react";
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
-import { Download, FileUp, Plus, RotateCcw, Save, Trash } from "lucide-react";
+import { Copy, Download, FileUp, Plus, RotateCcw, Save, Trash } from "lucide-react";
 import { downloadCsv, wheelsToCsv } from "./csv";
 import { customContent } from "./storage";
 import type { Game, StoredState, Wheel } from "./types";
@@ -18,6 +18,23 @@ interface NameEntriesProps {
   restoreWheel: (wheelId: string) => void;
   importWheels: (csv: string) => number;
 }
+
+export const AI_CSV_PROMPT = `Create home-learning games for young children. Reply with CSV only, using this exact header:
+
+wheel,title,instructions
+
+Rules:
+- Each row is one game.
+- "wheel" is the subject name. Games that share a wheel name go on the same spinner.
+- "title" is a short game name.
+- "instructions" are 2–5 sentences a parent can follow at home with everyday materials.
+- Put instructions in double quotes. If a quote is needed inside them, double it ("").
+- No markdown, tables, or extra commentary. Return only the CSV.
+
+Example:
+wheel,title,instructions
+Rainy-day games,Puddle Jump,"Count puddles on a walk, then jump in the biggest safe one."
+Kitchen maths,Spoon Weigh,"Compare two kitchen items and say which feels heavier. Check by placing them in your hands."`;
 
 const controlStyle = { background: "#F2EFE9", color: "#24332E", borderRadius: "8px" };
 const fieldStyle: CSSProperties = {
@@ -40,7 +57,9 @@ export const NameEntries = ({
   const [editingId, setEditingId] = useState<string | null>(null);
   const [csvText, setCsvText] = useState("");
   const [message, setMessage] = useState("");
+  const [copiedPrompt, setCopiedPrompt] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
+  const promptInput = useRef<HTMLTextAreaElement>(null);
   const customWheels = customContent(state);
   const hasCustomContent = customWheels.some((wheel) => wheel.games.length) || state.customWheels.length > 0;
 
@@ -126,6 +145,9 @@ export const NameEntries = ({
       </Box>
 
       <Heading size="md" mb={2}>Games on this wheel</Heading>
+      {activeWheel?.description && (
+        <Text fontSize="sm" color="gray.700" mb={2}>{activeWheel.description}</Text>
+      )}
       <Text fontSize="sm" color="gray.600" mb={3}>
         Built-in games cannot be overwritten. You can hide them after a spin, or add your own underneath.
       </Text>
@@ -195,6 +217,45 @@ export const NameEntries = ({
           <Button {...controlStyle} onClick={() => fileInput.current?.click()}><FileUp size={17} /> Upload CSV</Button>
         </Flex>
         {message && <Text mt={3} fontSize="sm" fontWeight="medium">{message}</Text>}
+
+        <Box mt={5} p={3} borderRadius="md" bg="white" border="1px dashed #CDE3DC">
+          <Text fontSize="sm" fontWeight="semibold" mb={1}>Want an AI to invent games?</Text>
+          <Text fontSize="sm" color="gray.700" mb={3}>
+            Copy this prompt into ChatGPT, Claude or another model. Paste the CSV it returns above, then import.
+          </Text>
+          <textarea
+            ref={promptInput}
+            aria-label="AI prompt for CSV games"
+            readOnly
+            value={AI_CSV_PROMPT}
+            onFocus={(event) => event.currentTarget.select()}
+            style={{
+              ...fieldStyle, background: "#F8F7F3", minHeight: 220, whiteSpace: "pre-wrap",
+              fontFamily: "monospace", fontSize: 12, marginBottom: 12,
+            }}
+          />
+          <Button {...controlStyle} size="sm" onClick={async () => {
+            const markCopied = () => {
+              setCopiedPrompt(true);
+              window.setTimeout(() => setCopiedPrompt(false), 2000);
+            };
+            try {
+              await navigator.clipboard.writeText(AI_CSV_PROMPT);
+              markCopied();
+              return;
+            } catch {
+              const area = promptInput.current;
+              if (!area) return;
+              area.focus();
+              area.select();
+              const copied = document.execCommand("copy");
+              if (copied) markCopied();
+              else setMessage("Select the prompt text and copy it with Ctrl+C.");
+            }
+          }}>
+            <Copy size={16} /> {copiedPrompt ? "Copied" : "Copy AI prompt"}
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

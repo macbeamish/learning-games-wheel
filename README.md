@@ -10,7 +10,7 @@ After GitHub Pages is enabled, the public site is:
 
 https://macbeamish.github.io/learning-games-wheel/
 
-Built-in subject wheels (number, letter, talking, geography, science, logic) are included. Anything you add is stored only in your browser, not on a server.
+Built-in subject wheels cover number and maths; letters, phonics and reading; talking, listening and storytelling; geography and world; science and nature; logic, memory and problem-solving; and te reo Māori and waiata. Anything you add is stored only in your browser, not on a server.
 
 ## Add your own games
 
@@ -25,7 +25,7 @@ A full backup of every game currently on the wheels is available as **Download a
 
 ```csv
 wheel,title,instructions
-Number games,Number-Line Jump,"Make a number line on the floor. Jump to the answer."
+Number and maths,Number Hunt,"Hide number cards around the room. Find one, say the number, then collect that many small objects."
 Rainy-day games,Puddle Jump,"Count puddles, then jump in the biggest one."
 ```
 

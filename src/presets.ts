@@ -7,416 +7,220 @@ const game = (id: string, title: string, instructions: string): Game => ({
   custom: false,
 });
 
-const wheel = (id: string, name: string, games: Game[]): Wheel => ({
+const wheel = (id: string, name: string, description: string, games: Game[]): Wheel => ({
   id,
   name,
+  description,
   games,
   custom: false,
 });
 
 export const PRESET_WHEELS: Wheel[] = [
-  wheel("preset-number-games", "Number games", [
-    game(
-      "preset-number-line-jump",
-      "Number-Line Jump",
-      `What you need: Masking tape or chalk, and a marker.
-
-How to play:
-1. Make a number line on the floor (0 to 10, or 0 to 20).
-2. Call out a number, or a simple sum such as 3 + 2.
-3. Your child jumps to the answer and says it out loud.
-
-Make it easier: Start with 0–5 and call numbers only.
-Make it harder: Use larger numbers, take-aways, or “jump 2 more than 7”.`
-    ),
-    game(
-      "preset-beanbag-answers",
-      "Beanbag Answers",
-      `What you need: A beanbag or soft toy, and paper numbers spread on the floor.
-
-How to play:
-1. Spread number cards in a space where it is safe to throw.
-2. Ask a maths question, such as “What is 4 + 1?”
-3. Your child throws the beanbag onto the matching number and explains the answer.
-
-Make it easier: Hold up a number of fingers to match.
-Make it harder: Use two-step questions, such as “double 3, then add 1”.`
-    ),
-    game(
-      "preset-maths-obstacle-course",
-      "Maths Obstacle Course",
-      `What you need: Cushions, chairs, or garden objects to crawl under, hop over, or walk around.
-
-How to play:
-1. Set up 4–6 simple obstacle stations.
-2. At each station, ask a quick number challenge before they can move on (count jumps, add two numbers, find a matching numeral).
-3. Cheer them through to the finish.
-
-Make it easier: Use counting only (“do 5 hops”).
-Make it harder: Give a running total they have to keep in their head.`
-    ),
-    game(
-      "preset-addition-bowling",
-      "Addition Bowling",
-      `What you need: Plastic bottles or empty cartons, and a soft ball.
-
-How to play:
-1. Set up 6 or 10 “pins” and count them together.
-2. Roll the ball and count how many fell and how many are still standing.
-3. Say the number sentence out loud: fallen + standing = total.
-
-Make it easier: Start with 5 pins.
-Make it harder: Keep a score over three turns and add the totals.`
-    ),
-    game(
-      "preset-skip-count-steps",
-      "Skip-Count Steps",
-      `What you need: Space to walk, and optional number cards.
-
-How to play:
-1. Choose a skip-count: 2s, 5s or 10s.
-2. Walk around the room taking one step per count: “2, 4, 6…”
-3. Clap, hop, or turn around on each number to keep it lively.
-
-Make it easier: Count in 1s first, then try 2s.
-Make it harder: Count backwards, or start from a number that is not zero.`
-    ),
-  ]),
-  wheel("preset-letter-games", "Letter games", [
-    game(
-      "preset-letter-hunt",
-      "Letter Hunt",
-      `What you need: Paper letter cards (or fridge magnets) hidden around one room.
-
-How to play:
-1. Hide 6–10 letters while your child covers their eyes.
-2. They hunt for each letter, say its sound, and think of a word that starts with it.
-3. Sort found letters into a simple word when you have enough.
-
-Make it easier: Hunt for letters from their name only.
-Make it harder: Ask them to find letters in a given order to spell a word.`
-    ),
-    game(
-      "preset-phonics-hopscotch",
-      "Phonics Hopscotch",
-      `What you need: Chalk or paper squares with letters or sounds.
-
-How to play:
-1. Draw hopscotch squares and write a sound in each one (s, a, t, p, i, n).
-2. Your child hops on a square and says the sound.
-3. Hop a short trail, then blend the sounds into a word.
-
-Make it easier: Use only 3–4 well-known sounds.
-Make it harder: Include digraphs such as sh, ch, or th.`
-    ),
-    game(
-      "preset-word-relay",
-      "Word Relay",
-      `What you need: Letter cards in a pile, and a target word written on paper.
-
-How to play:
-1. Place the letter pile a few steps away.
-2. Call a simple word (cat, ship, sand).
-3. Your child runs to collect the letters one at a time and builds the word.
-
-Make it easier: Use three-letter words and keep the letters already in a small choice pile.
-Make it harder: Include longer words, or time how quickly they can build three words.`
-    ),
-    game(
-      "preset-robot-blending",
-      "Robot Blending",
-      `What you need: Nothing, or a toy robot for fun.
-
-How to play:
-1. Speak like a robot, stretching each sound: “c-a-t”.
-2. Your child blends the sounds and says the whole word.
-3. Swap roles so they robot-talk a word for you.
-
-Make it easier: Use two-sound words such as “a-t” or “u-p”.
-Make it harder: Use four-sound words such as “s-t-o-p” or “c-r-a-b”.`
-    ),
-    game(
-      "preset-syllable-steps",
-      "Syllable Steps",
-      `What you need: Space to take a few steps.
-
-How to play:
-1. Say a word (elephant, banana, sunshine).
-2. Your child takes one step for each syllable and claps the beats: “el-e-phant”.
-3. Try names of family, foods, and animals.
-
-Make it easier: Start with one- and two-syllable words.
-Make it harder: Ask them to invent a word with a given number of syllables.`
-    ),
-  ]),
-  wheel("preset-talking-games", "Talking games", [
-    game(
-      "preset-act-out-a-story",
-      "Act Out a Story",
-      `What you need: A short picture book, or a story you both know.
-
-How to play:
-1. Read or tell the story once.
-2. Choose two or three favourite scenes and act them out with voices and actions.
-3. Add a new ending if they want to.
-
-Make it easier: You play most of the parts; they join in with one character.
-Make it harder: Pause and ask “What might happen next?” before you act it.`
-    ),
-    game(
-      "preset-emotion-charades",
-      "Emotion Charades",
-      `What you need: Nothing, or simple feeling cards (happy, sad, cross, proud, worried).
-
-How to play:
-1. Act out a feeling with no words.
-2. Your child guesses the feeling, then thinks of a time they felt that way.
-3. Swap roles.
-
-Make it easier: Start with happy, sad, and silly.
-Make it harder: Add mixed feelings, such as excited-and-nervous.`
-    ),
-    game(
-      "preset-story-stations",
-      "Story Stations",
-      `What you need: Four spots in the room labelled Beginning, Problem, Solution, Ending.
-
-How to play:
-1. Stand at Beginning and invent who the story is about.
-2. Move to Problem and say what goes wrong.
-3. Move to Solution and Ending to finish the tale.
-
-Make it easier: Retell a known story instead of inventing one.
-Make it harder: Give them a random object that must appear in the story.`
-    ),
-    game(
-      "preset-mystery-object",
-      "Mystery Object",
-      `What you need: A bag and one household object inside it.
-
-How to play:
-1. One person feels the object without looking (or gives spoken clues).
-2. The other asks yes/no questions: “Is it food? Is it heavy?”
-3. Guess what it is, then swap.
-
-Make it easier: Give two obvious clues first.
-Make it harder: Allow only five questions before a guess.`
-    ),
-    game(
-      "preset-puppet-interview",
-      "Puppet Interview",
-      `What you need: A puppet, toy, or sock with a face.
-
-How to play:
-1. The puppet is a guest (a firefighter, a dragon, a visitor from space).
-2. Your child asks questions: “What do you eat? What is your job?”
-3. Answer in character, then let them be the puppet.
-
-Make it easier: You ask the questions; they answer as the puppet.
-Make it harder: The puppet tells a short news report about its day.`
-    ),
-  ]),
-  wheel("preset-geography", "Geography", [
-    game(
-      "preset-compass-directions",
-      "Compass Directions",
-      `What you need: Paper labelled North, East, South, West laid on the floor like a compass.
-
-How to play:
-1. Stand in the middle of the compass.
-2. Give directions: “Take 3 steps north, then 2 steps east.”
-3. Hide a small treasure and guide them to it with compass language.
-
-Make it easier: Use only two directions, such as forward and left.
-Make it harder: Let them write a short route for you to follow.`
-    ),
-    game(
-      "preset-map-treasure-hunt",
-      "Map Treasure Hunt",
-      `What you need: Paper and a pencil, plus a small treat or toy to hide.
-
-How to play:
-1. Sketch a simple map of the room or garden (door, sofa, tree).
-2. Hide a treasure and mark it with X.
-3. Your child follows the map to find it, then draws a map for you.
-
-Make it easier: Walk the route together while looking at the map.
-Make it harder: Add landmarks and a dotted path they must follow in order.`
-    ),
-    game(
-      "preset-continent-corners",
-      "Continent Corners",
-      `What you need: Four corners of a room labelled with continents (or land / sea / hot / cold).
-
-How to play:
-1. Call out an animal, food, or landmark (“penguins”, “pyramids”, “pandas”).
-2. Your child runs to the matching corner.
-3. Talk for a moment about why that place fits.
-
-Make it easier: Use only two labels, such as hot places and cold places.
-Make it harder: They must name the continent before they run.`
-    ),
-    game(
-      "preset-weather-reporter",
-      "Weather Reporter",
-      `What you need: A window or outdoor space, and optional hat or toy microphone.
-
-How to play:
-1. Look at the sky, trees, and ground together.
-2. Your child gives a weather report: cloudy, windy, rainy, hot, cold.
-3. They recommend clothes and an activity that fits today’s weather.
-
-Make it easier: Choose from two words, such as sunny or rainy.
-Make it harder: Keep a simple week chart and compare today with yesterday.`
-    ),
-    game(
-      "preset-land-or-water",
-      "Land or Water",
-      `What you need: A line on the floor. One side is Land, the other is Water.
-
-How to play:
-1. Call out a place, animal, or vehicle (camel, whale, canoe, mountain).
-2. Your child jumps to Land or Water.
-3. Pause on tricky ones (frog, aeroplane, island) and talk it through.
-
-Make it easier: Use very obvious examples first.
-Make it harder: Add a middle “both” zone for things that fit either.`
-    ),
-  ]),
-  wheel("preset-science", "Science", [
-    game(
-      "preset-sink-or-float",
-      "Sink or Float",
-      `What you need: A bowl of water and 6–8 household objects (spoon, cork, coin, crayon, apple).
-
-How to play:
-1. Predict sink or float for each object and sort them into two piles.
-2. Test one at a time.
-3. Talk about which predictions were right and what you notice (heavy, hollow, metal).
-
-Make it easier: Choose objects that are very different.
-Make it harder: Try shaping the same material (foil ball vs foil boat).`
-    ),
-    game(
-      "preset-magnet-hunt",
-      "Magnet Hunt",
-      `What you need: A fridge magnet or magnetic wand.
-
-How to play:
-1. Test objects around the house: keys, paper, fabric, tins, toys.
-2. Make two collections: magnetic and not magnetic.
-3. Guess before each test, then check.
-
-Make it easier: You offer two objects at a time to compare.
-Make it harder: Hunt for magnetic things that are not obviously metal.`
-    ),
-    game(
-      "preset-ramp-race",
-      "Ramp Race",
-      `What you need: A plank, book, or cardboard ramp, and two toys that can roll or slide.
-
-How to play:
-1. Race two toys down the ramp.
-2. Change one thing: steeper ramp, bumpier surface, heavier toy.
-3. Talk about which change made it faster or slower.
-
-Make it easier: Race only two times and describe what you see.
-Make it harder: Measure roughly with footsteps or a count of seconds.`
-    ),
-    game(
-      "preset-shadow-chase",
-      "Shadow Chase",
-      `What you need: A torch, or a sunny patch of floor, and paper if you want to draw.
-
-How to play:
-1. Make hand or toy shadows on a wall or the floor.
-2. Move the light closer and further away. Notice how the shadow changes.
-3. Trace a favourite shadow, then try to match it again.
-
-Make it easier: Play “copy my shadow shape”.
-Make it harder: Ask whether the shadow is longer in the morning or afternoon outdoors.`
-    ),
-    game(
-      "preset-habitat-builder",
-      "Habitat Builder",
-      `What you need: Cushions, boxes, fabric, toys, and paper for a sign.
-
-How to play:
-1. Choose an animal (penguin, bee, crab, rabbit).
-2. Build a mini habitat that would help it live: shelter, food, water, space to move.
-3. Give a short tour: “This is the nest. This is where it finds food.”
-
-Make it easier: Build together and you name the parts.
-Make it harder: Compare two animals and explain why their homes are different.`
-    ),
-  ]),
-  wheel("preset-logic-puzzles", "Logic and puzzles", [
-    game(
-      "preset-puzzle-relay",
-      "Puzzle Relay",
-      `What you need: A simple jigsaw or a picture cut into a few large pieces.
-
-How to play:
-1. Place the pieces a few steps from the table.
-2. Your child fetches one piece at a time and fits it.
-3. Work as a team until the picture is complete.
-
-Make it easier: Use 4–6 large pieces.
-Make it harder: Fetch pieces in a given colour or edge-first order.`
-    ),
-    game(
-      "preset-human-coding",
-      "Human Coding",
-      `What you need: A clear floor path and a target object.
-
-How to play:
-1. One person is the robot. They only move when given an instruction.
-2. Give steps such as “forward 2, turn left, forward 1”.
-3. If the robot goes wrong, debug the instructions and try again.
-
-Make it easier: Use only forward and turn.
-Make it harder: Write the program on paper before the robot moves.`
-    ),
-    game(
-      "preset-what-changed",
-      "What Changed?",
-      `What you need: A tray or table with 5–8 small objects.
-
-How to play:
-1. Let your child look carefully for 20 seconds.
-2. They turn away while you change one thing (remove, add, or swap).
-3. They look back and say what changed.
-
-Make it easier: Use fewer objects and make a big change.
-Make it harder: Change two things, or only turn one object slightly.`
-    ),
-    game(
-      "preset-build-from-memory",
-      "Build from Memory",
-      `What you need: Blocks, Lego, or stacking cups.
-
-How to play:
-1. Build a small model and show it for about 20 seconds.
-2. Cover it.
-3. Your child rebuilds it from memory, then compare.
-
-Make it easier: Use 3–4 pieces in a simple tower.
-Make it harder: Add colour patterns or a time limit.`
-    ),
-    game(
-      "preset-pattern-moves",
-      "Pattern Moves",
-      `What you need: Space to move.
-
-How to play:
-1. Make a movement pattern: clap, jump, clap, jump.
-2. Your child copies it, then adds the next two moves.
-3. Invent new patterns with hops, turns, and stomps.
-
-Make it easier: Use a two-move pattern and say it while you do it.
-Make it harder: Use three-move patterns, or ask them to spot the mistake in yours.`
-    ),
-  ]),
+  wheel(
+    "preset-number-games",
+    "Number and maths",
+    "Counting, number sense, early operations, patterns, shape and measurement through movement and practical play.",
+    [
+      game("preset-number-number-hunt", "Number Hunt", "Hide number cards around the room. Find one, say the number, then collect that many small objects."),
+      game("preset-number-floor-is-lava", "Floor Is Lava Maths", "Spread number-answer cards on the floor as safe islands. Call out a maths question and jump to the correct answer."),
+      game("preset-number-hopscotch", "Hopscotch Maths", "Write numbers or sums in hopscotch squares. Solve each one while hopping through the course."),
+      game("preset-number-toy-shop", "Toy Shop", "Set up a pretend shop with household objects and price labels. Buy, sell, count coins and work out simple totals or change."),
+      game("preset-number-dice-race", "Dice Race", "Roll a die, solve a matching counting or addition task, then move that many spaces toward a finish line."),
+      game("preset-number-double-it", "Double It!", "Choose a small number with cards or dice, build it with objects, then make twice as many."),
+      game("preset-number-feed-the-monster", "Feed the Monster", "Make a box monster with a mouth. Solve a number challenge and feed it the correct number of counters."),
+      game("preset-number-hungry-crocodile", "Hungry Crocodile", "Use a crocodile mouth made from card or hands. Compare two groups and point the open mouth toward the larger amount."),
+      game("preset-number-sock-maths", "Sock Maths", "Mix clean socks, then race to match pairs. Count the pairs, individual socks, colours or patterns."),
+      game("preset-number-lego-towers", "Lego Towers", "Roll a die or draw a number card and build a Lego tower with that many bricks. Compare tower heights."),
+      game("preset-number-make-10", "Make 10", "Draw two number cards and use counters to find how many more are needed to make 10."),
+      game("preset-number-bowling", "Bowling Maths", "Set up bottles as pins. Roll a ball, count how many fall and subtract them from the starting total."),
+      game("preset-number-jump-the-answer", "Jump the Answer", "Place answer cards around the room. Ask a sum and jump onto the matching answer."),
+      game("preset-number-pattern-master", "Pattern Master", "Start a colour, shape, sound or movement pattern. Copy it and add the next part."),
+      game("preset-number-estimate-it", "Estimate It", "Guess the number of objects in a jar or pile, then count them and compare the estimate with the result."),
+      game("preset-number-measure-the-house", "Measure the House", "Choose household objects or rooms to measure using blocks, footsteps, a ruler or tape measure. Record the results."),
+      game("preset-number-tallest-tower", "Tallest Tower", "Use blocks, cups or boxes to build the tallest freestanding tower possible, then measure and improve it."),
+      game("preset-number-maths-workout", "Maths Workout", "Link movements to numbers: five jumps, three squats and two spins. Add the movements or repeat a pattern."),
+      game("preset-number-human-number-line", "Human Number Line", "Lay number cards in a line on the floor. Stand on a number and step forward or back to solve addition and subtraction."),
+      game("preset-number-line-jump", "Number-Line Jump", "Make a floor number line and call a starting number plus an instruction such as “jump forward three.” Say the landing number."),
+      game("preset-number-beanbag-answers", "Beanbag Answers", "Place numbered targets on the floor. Ask a question and throw a beanbag onto the correct answer."),
+      game("preset-number-maths-obstacle-course", "Maths Obstacle Course", "Build a short obstacle course. At each station solve a counting, measuring, shape or number challenge before continuing."),
+      game("preset-number-skip-count-steps", "Skip-Count Steps", "Count aloud while stepping, clapping or jumping in twos, fives or tens. Stop and predict the next number."),
+      game("preset-number-shape-hunt", "Shape Hunt", "Hide or point out shapes around the home. Name each shape and describe its sides, corners and position."),
+    ]
+  ),
+  wheel(
+    "preset-letter-games",
+    "Letters, phonics and reading",
+    "Letter recognition, sound awareness, blending, early reading and writing through active games.",
+    [
+      game("preset-letter-letter-hunt", "Letter Hunt", "Choose a letter and hunt for objects, labels or book words beginning with it. Say each sound as it is found."),
+      game("preset-letter-secret-message", "Secret Message", "Write a short word or clue using pictures, initial letters or simple symbols. Swap messages and decode them."),
+      game("preset-letter-write-me-a-clue", "Write Me a Clue", "Choose a hidden object and write or dictate one clue at a time until the other player guesses it."),
+      game("preset-letter-beanbag-letters", "Beanbag Letters", "Place letter cards as targets. Say a sound or word and throw a beanbag at the matching beginning or ending letter."),
+      game("preset-letter-alphabet-rescue", "Alphabet Rescue", "Hide alphabet cards around the room. Find them and place them in order, saying each letter and sound."),
+      game("preset-letter-sound-detective", "Sound Detective", "Say a sound and search for something that begins or ends with it. Take turns being the sound caller."),
+      game("preset-letter-word-builder", "Word Builder", "Use magnetic or paper letters to build a spoken word. Change one letter to make a new word."),
+      game("preset-letter-silly-sentence", "Silly Sentence", "Choose a few word or picture cards and arrange them into the funniest sentence that still makes sense."),
+      game("preset-letter-story-dice", "Story Dice", "Roll picture dice or choose random pictures, then tell or write a story that includes every image."),
+      game("preset-letter-finish-my-story", "Finish My Story", "Begin a story with one sentence. Take turns adding sentences, drawing key events or writing simple words."),
+      game("preset-letter-draw-my-instructions", "Draw My Instructions", "Give a short sequence of instructions for a picture. The listener draws exactly what they hear, then compares results."),
+      game("preset-letter-teacher-swap", "Teacher Swap", "The child becomes the teacher and explains a letter, sound or word game to an adult or toy pupil."),
+      game("preset-letter-phonics-hopscotch", "Phonics Hopscotch", "Write letters or sounds in hopscotch squares. Hop to the sound called, or say a word using each sound landed on."),
+      game("preset-letter-word-relay", "Word Relay", "Put word or picture cards at one end of the room. Run to collect one, read it and sort or use it in a sentence."),
+      game("preset-letter-robot-blending", "Robot Blending", "Say a simple word slowly like a robot, stretching each sound. Blend the sounds together and identify the word."),
+      game("preset-letter-syllable-steps", "Syllable Steps", "Say a word and step, clap or jump once for each syllable. Sort words by the number of syllables."),
+      game("preset-letter-sound-corners", "Sound Corners", "Place sound cards in different corners. Say a word and move to the corner showing its first or final sound."),
+      game("preset-letter-letter-toss", "Letter Toss", "Toss letter cards or soft letter shapes into a basket. Name the letter, sound and a word beginning with it before each toss."),
+      game("preset-letter-alphabet-obstacle-course", "Alphabet Obstacle Course", "Build a course with letter stations. Crawl, jump or balance to each one and complete its sound or word challenge."),
+      game("preset-letter-rhyming-race", "Rhyming Race", "Say a word, then race to find or call another word that rhymes. Use picture cards when a prompt is helpful."),
+      game("preset-letter-word-scavenger-hunt", "Word Scavenger Hunt", "Choose a letter, sound or word family and search books, labels and packages for matching examples."),
+      game("preset-letter-sight-word-splat", "Sight Word Splat", "Spread familiar word cards on the floor. Call a word and tap it quickly with a fly swatter, hand or beanbag."),
+      game("preset-letter-build-a-word-relay", "Build-a-Word Relay", "Carry one letter at a time through a relay course and arrange the collected letters to build a spoken word."),
+      game("preset-letter-vowel-jump", "Vowel Jump", "Place vowel cards on the floor. Say a simple word and jump to the vowel sound heard in the middle."),
+    ]
+  ),
+  wheel(
+    "preset-talking-games",
+    "Talking, listening and storytelling",
+    "Conversation, listening, confidence, vocabulary and story-building through imaginative play.",
+    [
+      game("preset-talking-silly-sentence", "Silly Sentence", "Pick random people, places and actions, then join them into a funny complete sentence."),
+      game("preset-talking-story-dice", "Story Dice", "Roll picture dice or choose images and tell a story linking every picture in order."),
+      game("preset-talking-finish-my-story", "Finish My Story", "One person begins a story and stops at an exciting point. The next person continues it."),
+      game("preset-talking-mystery-bag", "Mystery Bag", "Feel an unseen household object inside a bag and describe it without naming it. Others guess what it is."),
+      game("preset-talking-20-questions", "20 Questions", "Choose a person, animal, place or object. The other player may ask up to 20 yes-or-no questions to identify it."),
+      game("preset-talking-weather-reporter", "Weather Reporter", "Look outside or use a weather picture, then present a short forecast including temperature, clothing and activities."),
+      game("preset-talking-where-am-i", "Where Am I?", "Describe a familiar place without naming it. Give clues about what can be seen, heard and done there."),
+      game("preset-talking-teacher-swap", "Teacher Swap", "The child teaches an adult or toy how to do something, then answers questions from the “class.”"),
+      game("preset-talking-invent-a-game", "Invent a Game", "Make up a simple game, explain its goal and rules, test it together and change anything that is confusing."),
+      game("preset-talking-act-out-a-story", "Act Out a Story", "Choose a familiar story or invent one, then act out the characters and events using movement and dialogue."),
+      game("preset-talking-emotion-charades", "Emotion Charades", "Act out an emotion using face, posture and movement without speaking. Guess it and discuss when someone might feel that way."),
+      game("preset-talking-story-stations", "Story Stations", "Set up several story stops around the room. Add a character, problem or event at each stop."),
+      game("preset-talking-puppet-interview", "Puppet Interview", "Use puppets or toys to interview a character. Ask about their feelings, choices and adventures."),
+      game("preset-talking-describe-and-draw", "Describe and Draw", "One person describes a picture or simple arrangement without showing it. The other draws it from the spoken details."),
+      game("preset-talking-yes-or-no-detective", "Yes-or-No Detective", "One player secretly chooses something. Ask only yes-or-no questions until it is identified."),
+      game("preset-talking-question-ball", "Question Ball", "Toss a soft ball back and forth. Whoever catches it answers a question or asks the next one."),
+      game("preset-talking-sound-effects-story", "Sound-Effects Story", "Tell a short story while another person creates matching noises with their voice or household objects."),
+      game("preset-talking-picture-prompt", "Picture Prompt", "Choose an interesting picture and explain what happened before it, what is happening now and what may happen next."),
+      game("preset-talking-news-reporter", "News Reporter", "Present two or three pieces of family or local news using a clear opening, details and closing."),
+      game("preset-talking-story-relay", "Story Relay", "Move between marked stations, adding one sentence to the shared story at each station."),
+      game("preset-talking-telephone-game", "Telephone Game", "Whisper a sentence from person to person, then compare the final version with the original."),
+      game("preset-talking-silly-choices-debate", "Silly Choices Debate", "Choose a playful question such as “Would you rather fly or breathe underwater?” Give a choice and a reason."),
+      game("preset-talking-show-and-tell", "Show and Tell", "Choose an object, creation or discovery to present. Explain what it is and answer a few questions."),
+      game("preset-talking-role-play-shop", "Role-Play Shop", "Set up a pretend shop and take turns being customer and shopkeeper, asking questions and speaking politely."),
+    ]
+  ),
+  wheel(
+    "preset-geography",
+    "Geography and world",
+    "Maps, directions, places, environments and world knowledge explored through movement and making.",
+    [
+      game("preset-geo-compass-directions", "Compass Directions", "Mark north, south, east and west in the room. Call a direction and move, jump or turn toward it."),
+      game("preset-geo-map-treasure-hunt", "Map Treasure Hunt", "Draw a simple map with a route and landmarks leading to hidden treasure. Follow it, then swap mapmaker roles."),
+      game("preset-geo-continent-corners", "Continent Corners", "Label four areas with continent names. Call an animal, landmark or country and move to its continent."),
+      game("preset-geo-weather-reporter", "Weather Reporter", "Observe the day’s weather and present a report. Mark it on a weekly chart and compare changes."),
+      game("preset-geo-land-or-water", "Land or Water", "Sort pictures or toy animals and vehicles according to whether they belong mainly on land or water."),
+      game("preset-geo-globe-spin", "Globe Spin", "Spin a globe or point randomly at a map. Find the place, name its continent and discover one fact about it."),
+      game("preset-geo-postcard-adventure", "Postcard Adventure", "Choose a place and create a postcard drawing. Dictate or write a short message about what could be seen there."),
+      game("preset-geo-build-a-map", "Build a Map", "Draw a map of a bedroom, home, garden or imagined island using a key and clear landmarks."),
+      game("preset-geo-country-flag-match", "Country Flag Match", "Match printed or hand-drawn flags to country names or map locations. Notice colours, shapes and symbols."),
+      game("preset-geo-where-in-the-world", "Where in the World?", "Give clues about a country, city, landscape or landmark. Keep adding clues until the place is guessed."),
+      game("preset-geo-nsew-race", "North South East West Race", "Put direction signs around the room. Follow a called route using north, south, east and west."),
+      game("preset-geo-map-symbol-hunt", "Map Symbol Hunt", "Look at a real map, then hunt for symbols such as roads, water, parks and buildings. Create a personal map key."),
+      game("preset-geo-home-to-marae-map", "Home-to-Marae Map", "Draw the important stages of a real or imagined journey from home to the marae, adding landmarks along the way."),
+      game("preset-geo-world-animal-match", "World Animal Match", "Match animals to the continents or habitats where they naturally live, then move like each animal."),
+      game("preset-geo-ocean-jump", "Ocean Jump", "Label floor areas with ocean names. Jump to the correct ocean when given a continent or location clue."),
+      game("preset-geo-mountain-river-forest", "Mountain River or Forest", "Call a landscape type and move to its labelled area. Describe one feature of mountains, rivers or forests."),
+      game("preset-geo-capital-city-match", "Capital City Match", "Match a small set of countries with their capital cities using cards, a map and repeated play."),
+      game("preset-geo-pack-for-the-climate", "Pack for the Climate", "Choose a destination and climate, then select suitable clothing and items to pack. Explain each choice."),
+      game("preset-geo-follow-the-route", "Follow the Route", "Follow a route on a floor map or drawn map using direction and distance instructions."),
+      game("preset-geo-neighbourhood-walk-map", "Neighbourhood Walk Map", "Walk around the neighbourhood and notice landmarks, roads and turns. Afterwards draw the route from memory."),
+      game("preset-geo-time-zone-movement", "Time-Zone Movement Game", "Assign different room areas to morning, daytime and night in other locations. Move between them as the world “turns.”"),
+      game("preset-geo-build-a-landmark", "Build a Landmark", "Build a famous or imagined landmark from blocks, boxes or recycled materials, then locate its country or region."),
+      game("preset-geo-country-clue-charades", "Country Clue Charades", "Act out a country clue through food, animals, weather, sport or landmarks while others guess."),
+      game("preset-geo-human-compass", "Human Compass", "One person becomes a compass needle. Turn the “map” or call directions and keep pointing north."),
+    ]
+  ),
+  wheel(
+    "preset-science",
+    "Science and nature",
+    "Prediction, observation, testing and recording using safe household materials and the local environment.",
+    [
+      game("preset-science-sink-or-float", "Sink or Float", "Predict whether household objects will sink or float, test them in water, then sort and discuss the results."),
+      game("preset-science-magnet-hunt", "Magnet Hunt", "Use a magnet to test safe household objects. Sort them into magnetic and non-magnetic groups."),
+      game("preset-science-ramp-race", "Ramp Race", "Roll toy cars or balls down ramps with different heights or surfaces. Predict and compare distance or speed."),
+      game("preset-science-shadow-chase", "Shadow Chase", "Find and trace shadows outside or near a lamp. Revisit later and compare how their position or size changes."),
+      game("preset-science-habitat-builder", "Habitat Builder", "Choose an animal and build a habitat with blocks, natural materials or drawings, including food, water and shelter."),
+      game("preset-science-nature-scavenger-hunt", "Nature Scavenger Hunt", "Search outdoors for items matching prompts such as rough, green, tiny or fallen. Observe without damaging living things."),
+      game("preset-science-animal-movement-match", "Animal Movement Match", "Choose an animal card and move like that animal. Guess it and discuss how its movement suits its body or habitat."),
+      game("preset-science-weather-station", "Weather Station", "Record temperature, clouds, wind and precipitation at the same time each day using a simple chart."),
+      game("preset-science-mini-beast-search", "Mini-Beast Search", "Carefully search for insects and other tiny creatures. Observe where they live, then leave them undisturbed."),
+      game("preset-science-plant-parts-puzzle", "Plant Parts Puzzle", "Use a real plant or picture to identify roots, stem, leaves, flowers and seeds, then assemble a labelled puzzle or drawing."),
+      game("preset-science-states-of-matter", "States of Matter Actions", "Choose solid, liquid or gas signs. Act out how particles move in each state and move to the right sign for examples."),
+      game("preset-science-colour-mixing-lab", "Colour-Mixing Lab", "Mix small amounts of coloured water or paint. Predict the new colour before combining them."),
+      game("preset-science-ice-melt-race", "Ice-Melt Race", "Put equal ice cubes in different places or conditions. Predict which will melt first and compare the results."),
+      game("preset-science-sound-hunt", "Sound Hunt", "Pause in different places and list or imitate the sounds heard. Sort them as natural, human-made, loud or quiet."),
+      game("preset-science-five-senses-trail", "Five Senses Trail", "Follow a trail of stations for sight, hearing, touch, smell and safe tasting. Describe observations with precise words."),
+      game("preset-science-day-or-night-sort", "Day or Night Sort", "Sort animals, activities and sky pictures into day, night or both, explaining each decision."),
+      game("preset-science-living-or-non-living", "Living or Non-Living Relay", "Carry picture cards through a short relay and sort them as living or non-living. Explain what living things need."),
+      game("preset-science-build-a-nest", "Build a Nest", "Use grass, twigs, paper or craft materials to build a nest that can safely hold pretend eggs."),
+      game("preset-science-seed-scientist", "Seed Scientist", "Plant quick-growing seeds, predict what will happen and record changes with drawings and measurements."),
+      game("preset-science-cloud-spotting", "Cloud Spotting", "Observe clouds and match their shapes to simple cloud pictures. Describe cloud cover and expected weather."),
+      game("preset-science-food-chain-line-up", "Food Chain Line-Up", "Give each player or card a role in a simple food chain. Stand in order and show what changes if one part disappears."),
+      game("preset-science-push-or-pull", "Push or Pull", "Move household objects by pushing or pulling. Compare the force needed and the direction of movement."),
+      game("preset-science-fast-or-slow-ramp", "Fast or Slow Ramp Test", "Change one ramp feature at a time and race identical objects. Record which setup makes them travel fastest or farthest."),
+      game("preset-science-mini-volcano", "Make a Mini Volcano", "Combine baking soda and vinegar in a tray or model volcano. Predict, observe and describe the bubbling reaction."),
+      game("preset-science-backyard-field-journal", "Backyard Field Journal", "Choose one outdoor area to revisit. Draw or write observations about plants, animals, weather and seasonal change."),
+    ]
+  ),
+  wheel(
+    "preset-logic-puzzles",
+    "Logic, memory and problem-solving",
+    "Sequencing, reasoning, memory, spatial thinking and persistence through puzzles and physical challenges.",
+    [
+      game("preset-logic-puzzle-relay", "Puzzle Relay", "Place simple puzzles at the far end of a movement course. Collect one piece per trip and complete the puzzle."),
+      game("preset-logic-human-coding", "Human Coding", "Give step-by-step commands such as forward, turn and pick up. One person acts as the robot while the other debugs the instructions."),
+      game("preset-logic-what-changed", "What Changed?", "Study a group of objects, close your eyes and let someone move, add or remove one. Identify the change."),
+      game("preset-logic-build-from-memory", "Build from Memory", "Look at a small block model for a short time, cover it, then rebuild it from memory and compare."),
+      game("preset-logic-pattern-moves", "Pattern Moves", "Copy a sequence of movements, then add one new movement each round without forgetting the earlier pattern."),
+      game("preset-logic-obstacle-course-quiz", "Obstacle Course Quiz", "Complete a movement course with a riddle, pattern or sorting task at each station."),
+      game("preset-logic-run-and-fetch", "Run and Fetch", "Ask for an object matching several clues, such as “small, red and soft.” Run to find a suitable answer."),
+      game("preset-logic-scavenger-hunt", "Scavenger Hunt", "Use a list of clues to find objects around the home. Tick them off and explain how each object matches."),
+      game("preset-logic-draw-it-huge", "Draw It Huge", "Call a shape, letter, route or idea and draw it at large scale using chalk, paper or body movement."),
+      game("preset-logic-race-the-timer", "Race the Timer", "Set a short timer and complete an age-appropriate sorting, building or puzzle challenge before it ends."),
+      game("preset-logic-simon-says-sequence", "Simon Says Sequence", "Perform a growing sequence of actions. Each player repeats the full sequence and adds one more action."),
+      game("preset-logic-treasure-hunt-clues", "Treasure Hunt Clues", "Follow a chain of simple picture or written clues leading to a hidden object."),
+      game("preset-logic-odd-one-out", "Odd One Out", "Show four objects or pictures where one does not belong. Choose the odd one and explain the rule."),
+      game("preset-logic-copy-my-block-build", "Copy My Block Build", "One player builds a block model behind a screen and describes it. The other follows the instructions, then compares."),
+      game("preset-logic-which-comes-next", "Which Comes Next?", "Show a number, colour, shape or action sequence with one part missing. Work out what should come next."),
+      game("preset-logic-maze-maker", "Maze Maker", "Draw or build a simple maze, then guide a toy through it using clear directions. Swap roles."),
+      game("preset-logic-sorting-challenge", "Sorting Challenge", "Sort mixed household objects in as many different ways as possible, such as size, colour, use or material."),
+      game("preset-logic-memory-tray", "Memory Tray", "Study a tray of objects for 30 seconds, cover it and recall or draw as many items as possible."),
+      game("preset-logic-blindfold-directions", "Blindfold Directions", "Guide a blindfolded adult or a toy through a safe open route using precise verbal directions."),
+      game("preset-logic-bridge-building", "Bridge-Building Challenge", "Use paper, blocks or recycled materials to build a bridge that spans a gap and holds a small toy. Test and improve it."),
+    ]
+  ),
+  wheel(
+    "preset-te-reo",
+    "Te reo Māori and waiata",
+    "Familiar kupu, waiata, movement and marae-connected experiences supported naturally by whānau.",
+    [
+      game("preset-tereo-kupu-hunt", "Kupu Hunt", "Choose a familiar kupu and hunt for the matching object or picture. Say the word together each time it is found."),
+      game("preset-tereo-tau-number-jump", "Tau Number Jump", "Place Māori number cards on the floor. Call a number in te reo Māori and jump to it, then count actions together."),
+      game("preset-tereo-tae-colour-corners", "Tae Colour Corners", "Put colour cards in different corners. Call a tae in te reo Māori and move to the matching colour."),
+      game("preset-tereo-tinana-body-part", "Tinana Body-Part Actions", "Sing or call familiar body-part words and touch or move the correct part, using phrases from an action waiata."),
+      game("preset-tereo-kararehe-charades", "Kararehe Animal Charades", "Choose an animal picture and act it out. Guess the kararehe and repeat its Māori name together."),
+      game("preset-tereo-whanau-picture-talk", "Whānau Picture Talk", "Use family photos or drawings to name whānau members and practise a few simple descriptive sentences."),
+      game("preset-tereo-waiata-action-song", "Waiata Action Song", "Choose a familiar waiata with actions. Sing it together, matching the meaning with clear movements."),
+      game("preset-tereo-rakau-rhythm", "Rākau Rhythm Game", "Tap or pass rākau in a simple repeated rhythm while chanting familiar kupu or counting in te reo Māori."),
+      game("preset-tereo-mihi-practice", "Mihi Practice", "Practise a short mihi in small sections, using names and whakapapa details that the whānau is comfortable sharing."),
+      game("preset-tereo-memory-match", "Te Reo Memory Match", "Make matching pairs of Māori word cards and pictures. Turn them face down and say each kupu when a card is revealed."),
+      game("preset-tereo-simon-says", "Simon Says in Te Reo", "Give familiar movement instructions in te reo Māori, such as stand, sit or jump. Move only after the agreed cue."),
+      game("preset-tereo-weather-words", "Weather Words in Te Reo", "Look outside and choose the matching Māori weather word or picture, then repeat it in a short phrase."),
+      game("preset-tereo-count-and-clap", "Count-and-Clap in Te Reo", "Count claps, jumps or steps together in te reo Māori, changing the speed or stopping at a called number."),
+      game("preset-tereo-purakau-story-acting", "Pūrākau Story Acting", "Listen to a whānau-approved pūrākau, then retell or act out its main events and talk about its message."),
+      game("preset-tereo-mara-kai-word-hunt", "Māra Kai Word Hunt", "Visit or work in the māra kai and find plants, tools or actions whose Māori words are being learned. Use the words during the task."),
+    ]
+  ),
 ];
 
 export const PRESET_WHEEL_IDS = new Set(PRESET_WHEELS.map((item) => item.id));
